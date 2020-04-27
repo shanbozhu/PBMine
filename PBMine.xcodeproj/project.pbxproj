@@ -18,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		2B18D7F62C7D4529B6EBA15F /* Pods-PBMine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBMine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PBMine/Pods-PBMine.debug.xcconfig"; sourceTree = "<group>"; };
+		95EDB3A52455BC2A003A43D4 /* PBNavigator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PBNavigator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E0564350B98F77BCE96816 /* libPods-PBMine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PBMine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06D544B1F6D2ED10092623E /* PBMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D8366A1FC5828300BCFC13 /* PBMinePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBMinePage.h; sourceTree = "<group>"; };
 		B0D8366B1FC5828300BCFC13 /* PBMinePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBMinePage.m; sourceTree = "<group>"; };
@@ -142,6 +144,8 @@
 		E1E5F23DFB7FE3A0F72D745E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95EDB3A52455BC2A003A43D4 /* PBNavigator.framework */,
+				A4E0564350B98F77BCE96816 /* libPods-PBMine.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,7 +176,6 @@
 				B06D54471F6D2ED10092623E /* Frameworks */,
 				B06D54481F6D2ED10092623E /* Headers */,
 				B06D54491F6D2ED10092623E /* Resources */,
-				3AE9FE02F4333C5048212E5B /* [CP] Copy Pods Resources */,
 				B0E093BD1FB2A6C800168C83 /* [PB] MultiPlatform Build */,
 			);
 			buildRules = (
@@ -204,6 +207,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = B06D54411F6D2ED10092623E;
@@ -228,24 +232,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3AE9FE02F4333C5048212E5B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PBMine/Pods-PBMine-resources.sh",
-				"${PODS_ROOT}/PBHome/PBHome.framework/Resource.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Resource.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PBMine/Pods-PBMine-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B0E093BD1FB2A6C800168C83 /* [PB] MultiPlatform Build */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

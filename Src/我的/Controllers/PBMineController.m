@@ -41,29 +41,6 @@
 }
 
 -(void)tapClick:(UITapGestureRecognizer *)tap {
-    
-    {
-        PBList *list = [[PBList alloc]init];
-        list.summaryText = @"我是来自PBHome Bundle的模型!";
-        list.cellHeight = 100;
-        NSLog(@"%@", list.summaryText);
-    }
-    
-    
-    
-//    PBListController *vc = [[PBListController alloc]init];
-//    vc.hidesBottomBarWhenPushed = YES;
-//
-//    vc.title = @"哈哈";
-//
-//    [self.navigationController pushViewController:vc animated:YES];
-//    vc.view.backgroundColor = [UIColor whiteColor];
-    
-    
-    
-
-    
-    
 //    Class class = NSClassFromString(PAGE_HOME_LIST);
 //    UIViewController *vc = [[class alloc]init];
 //    vc.hidesBottomBarWhenPushed = YES;
