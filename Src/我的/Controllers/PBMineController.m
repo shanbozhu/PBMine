@@ -18,29 +18,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    //imageView
+    // imageView
     UIImageView *imageView = [[UIImageView alloc]init];
     [self.view addSubview:imageView];
     imageView.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width-20)/2.0, 200, 20, 20);
     imageView.image = [UIImage imageNamed:@"Resource.bundle/pbmine_circle"];
     
-    //YYLabel
+    // YYLabel
     YYLabel *lab = [[YYLabel alloc]init];
     [self.view addSubview:lab];
     lab.frame = CGRectMake(20, 250, [UIScreen mainScreen].bounds.size.width-40, 20);
     lab.font = [UIFont systemFontOfSize:15];
     lab.textAlignment = NSTextAlignmentCenter;
-    lab.text = @"点我,测试拉拉啊--";
+    lab.text = @"点我哈000";
+    NSLog(@"lab.text = %@", lab.text);
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapClick:)];
     [self.view addGestureRecognizer:tap];
-    
-    
-    
-    
 }
 
--(void)tapClick:(UITapGestureRecognizer *)tap {
+- (void)tapClick:(UITapGestureRecognizer *)tap {
 //    Class class = NSClassFromString(PAGE_HOME_LIST);
 //    UIViewController *vc = [[class alloc]init];
 //    vc.hidesBottomBarWhenPushed = YES;
@@ -56,12 +53,8 @@
 //    [self.navigationController pushViewController:vc animated:YES];
 //    vc.view.backgroundColor = [UIColor whiteColor];
     
-    
     [PBRouter routerWithGoPageName:PAGE_HOME_LIST andParas:@{@"xxx":@"world"}];
     //[PBRouter routerWithGoPageName:@"xx" andParas:@{@"xxx":@"world"}];
 }
-
-
-
 
 @end
