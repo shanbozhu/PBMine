@@ -31,7 +31,6 @@
     lab.font = [UIFont systemFontOfSize:15];
     lab.textAlignment = NSTextAlignmentCenter;
     lab.text = @"点我哈11";
-    NSLog(@"lab.text = %@", lab.text);
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapClick:)];
     [self.view addGestureRecognizer:tap];
