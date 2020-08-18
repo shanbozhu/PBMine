@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		95A4F66324EBF06100A5A024 /* PBMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A4F66124EBF06100A5A024 /* PBMineController.m */; };
 		95A4F66424EBF06100A5A024 /* PBMineController.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A4F66224EBF06100A5A024 /* PBMineController.h */; };
-		B0D8366C1FC5828300BCFC13 /* PBMinePage.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D8366A1FC5828300BCFC13 /* PBMinePage.h */; };
-		B0D8366D1FC5828300BCFC13 /* PBMinePage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D8366B1FC5828300BCFC13 /* PBMinePage.m */; };
+		95A4F67424EBF6C900A5A024 /* PBMinePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A4F67224EBF6C900A5A024 /* PBMinePage.m */; };
+		95A4F67524EBF6C900A5A024 /* PBMinePage.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A4F67324EBF6C900A5A024 /* PBMinePage.h */; };
 		B0DFE2981FC562D3008D7DB2 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0DFE28D1FC562D3008D7DB2 /* Resource.bundle */; };
 		B0DFE29B1FC562D3008D7DB2 /* PBMine.h in Headers */ = {isa = PBXBuildFile; fileRef = B0DFE2951FC562D3008D7DB2 /* PBMine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0DFE29D1FC562D3008D7DB2 /* PBMine.pch in Headers */ = {isa = PBXBuildFile; fileRef = B0DFE2971FC562D3008D7DB2 /* PBMine.pch */; };
@@ -20,11 +20,11 @@
 		2B18D7F62C7D4529B6EBA15F /* Pods-PBMine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBMine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PBMine/Pods-PBMine.debug.xcconfig"; sourceTree = "<group>"; };
 		95A4F66124EBF06100A5A024 /* PBMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBMineController.m; sourceTree = "<group>"; };
 		95A4F66224EBF06100A5A024 /* PBMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBMineController.h; sourceTree = "<group>"; };
+		95A4F67224EBF6C900A5A024 /* PBMinePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBMinePage.m; sourceTree = "<group>"; };
+		95A4F67324EBF6C900A5A024 /* PBMinePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBMinePage.h; sourceTree = "<group>"; };
 		95EDB3A52455BC2A003A43D4 /* PBNavigator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PBNavigator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E0564350B98F77BCE96816 /* libPods-PBMine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PBMine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06D544B1F6D2ED10092623E /* PBMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0D8366A1FC5828300BCFC13 /* PBMinePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBMinePage.h; sourceTree = "<group>"; };
-		B0D8366B1FC5828300BCFC13 /* PBMinePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBMinePage.m; sourceTree = "<group>"; };
 		B0DFE28D1FC562D3008D7DB2 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
 		B0DFE2951FC562D3008D7DB2 /* PBMine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBMine.h; sourceTree = "<group>"; };
 		B0DFE2961FC562D3008D7DB2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,11 +84,19 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		95A4F67124EBF6C900A5A024 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				95A4F67324EBF6C900A5A024 /* PBMinePage.h */,
+				95A4F67224EBF6C900A5A024 /* PBMinePage.m */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
 		B06D54411F6D2ED10092623E = {
 			isa = PBXGroup;
 			children = (
 				B0DFE28E1FC562D3008D7DB2 /* Sources */,
-				B0D836631FC57F7E00BCFC13 /* Page */,
 				B0DFE28C1FC562D3008D7DB2 /* Resources */,
 				B06D544C1F6D2ED10092623E /* Products */,
 				4CE53AA7381397D0EB2B035D /* Pods */,
@@ -104,15 +112,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0D836631FC57F7E00BCFC13 /* Page */ = {
-			isa = PBXGroup;
-			children = (
-				B0D8366A1FC5828300BCFC13 /* PBMinePage.h */,
-				B0D8366B1FC5828300BCFC13 /* PBMinePage.m */,
-			);
-			path = Page;
-			sourceTree = "<group>";
-		};
 		B0DFE28C1FC562D3008D7DB2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +123,7 @@
 		B0DFE28E1FC562D3008D7DB2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				95A4F67124EBF6C900A5A024 /* Page */,
 				95A4F65E24EBF04300A5A024 /* API */,
 				95A4F65D24EBF04300A5A024 /* Business */,
 				B0DFE2951FC562D3008D7DB2 /* PBMine.h */,
@@ -150,8 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0DFE29B1FC562D3008D7DB2 /* PBMine.h in Headers */,
-				B0D8366C1FC5828300BCFC13 /* PBMinePage.h in Headers */,
 				B0DFE29D1FC562D3008D7DB2 /* PBMine.pch in Headers */,
+				95A4F67524EBF6C900A5A024 /* PBMinePage.h in Headers */,
 				95A4F66424EBF06100A5A024 /* PBMineController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95A4F66324EBF06100A5A024 /* PBMineController.m in Sources */,
-				B0D8366D1FC5828300BCFC13 /* PBMinePage.m in Sources */,
+				95A4F67424EBF6C900A5A024 /* PBMinePage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
