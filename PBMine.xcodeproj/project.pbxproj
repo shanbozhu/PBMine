@@ -78,8 +78,8 @@
 		95A4F66024EBF06100A5A024 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				95A4F66124EBF06100A5A024 /* PBMineController.m */,
 				95A4F66224EBF06100A5A024 /* PBMineController.h */,
+				95A4F66124EBF06100A5A024 /* PBMineController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
