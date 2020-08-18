@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95A4F66324EBF06100A5A024 /* PBMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A4F66124EBF06100A5A024 /* PBMineController.m */; };
+		95A4F66424EBF06100A5A024 /* PBMineController.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A4F66224EBF06100A5A024 /* PBMineController.h */; };
 		B0D8366C1FC5828300BCFC13 /* PBMinePage.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D8366A1FC5828300BCFC13 /* PBMinePage.h */; };
 		B0D8366D1FC5828300BCFC13 /* PBMinePage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D8366B1FC5828300BCFC13 /* PBMinePage.m */; };
 		B0DFE2981FC562D3008D7DB2 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0DFE28D1FC562D3008D7DB2 /* Resource.bundle */; };
-		B0DFE2991FC562D3008D7DB2 /* PBMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DFE2921FC562D3008D7DB2 /* PBMineController.m */; };
-		B0DFE29A1FC562D3008D7DB2 /* PBMineController.h in Headers */ = {isa = PBXBuildFile; fileRef = B0DFE2931FC562D3008D7DB2 /* PBMineController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0DFE29B1FC562D3008D7DB2 /* PBMine.h in Headers */ = {isa = PBXBuildFile; fileRef = B0DFE2951FC562D3008D7DB2 /* PBMine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0DFE29D1FC562D3008D7DB2 /* PBMine.pch in Headers */ = {isa = PBXBuildFile; fileRef = B0DFE2971FC562D3008D7DB2 /* PBMine.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B18D7F62C7D4529B6EBA15F /* Pods-PBMine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBMine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PBMine/Pods-PBMine.debug.xcconfig"; sourceTree = "<group>"; };
+		95A4F66124EBF06100A5A024 /* PBMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBMineController.m; sourceTree = "<group>"; };
+		95A4F66224EBF06100A5A024 /* PBMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBMineController.h; sourceTree = "<group>"; };
 		95EDB3A52455BC2A003A43D4 /* PBNavigator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PBNavigator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E0564350B98F77BCE96816 /* libPods-PBMine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PBMine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06D544B1F6D2ED10092623E /* PBMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D8366A1FC5828300BCFC13 /* PBMinePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBMinePage.h; sourceTree = "<group>"; };
 		B0D8366B1FC5828300BCFC13 /* PBMinePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBMinePage.m; sourceTree = "<group>"; };
 		B0DFE28D1FC562D3008D7DB2 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
-		B0DFE2921FC562D3008D7DB2 /* PBMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBMineController.m; sourceTree = "<group>"; };
-		B0DFE2931FC562D3008D7DB2 /* PBMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBMineController.h; sourceTree = "<group>"; };
 		B0DFE2951FC562D3008D7DB2 /* PBMine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBMine.h; sourceTree = "<group>"; };
 		B0DFE2961FC562D3008D7DB2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0DFE2971FC562D3008D7DB2 /* PBMine.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBMine.pch; sourceTree = "<group>"; };
@@ -50,6 +50,38 @@
 				B882AA5E2FB9C3BB26D4BEE2 /* Pods-PBMine.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		95A4F65D24EBF04300A5A024 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				95A4F65F24EBF06100A5A024 /* 我的 */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		95A4F65E24EBF04300A5A024 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		95A4F65F24EBF06100A5A024 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				95A4F66024EBF06100A5A024 /* Controllers */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		95A4F66024EBF06100A5A024 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				95A4F66124EBF06100A5A024 /* PBMineController.m */,
+				95A4F66224EBF06100A5A024 /* PBMineController.h */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B06D54411F6D2ED10092623E = {
@@ -81,13 +113,6 @@
 			path = Page;
 			sourceTree = "<group>";
 		};
-		B0D8366E1FC58C0400BCFC13 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Module;
-			sourceTree = "<group>";
-		};
 		B0DFE28C1FC562D3008D7DB2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,46 +124,13 @@
 		B0DFE28E1FC562D3008D7DB2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				95A4F65E24EBF04300A5A024 /* API */,
+				95A4F65D24EBF04300A5A024 /* Business */,
 				B0DFE2951FC562D3008D7DB2 /* PBMine.h */,
 				B0DFE2971FC562D3008D7DB2 /* PBMine.pch */,
 				B0DFE2961FC562D3008D7DB2 /* Info.plist */,
-				B0DFE28F1FC562D3008D7DB2 /* 我的 */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		B0DFE28F1FC562D3008D7DB2 /* 我的 */ = {
-			isa = PBXGroup;
-			children = (
-				B0D8366E1FC58C0400BCFC13 /* Module */,
-				B0DFE2901FC562D3008D7DB2 /* Models */,
-				B0DFE2911FC562D3008D7DB2 /* Controllers */,
-				B0DFE2941FC562D3008D7DB2 /* Views */,
-			);
-			path = "我的";
-			sourceTree = "<group>";
-		};
-		B0DFE2901FC562D3008D7DB2 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B0DFE2911FC562D3008D7DB2 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				B0DFE2931FC562D3008D7DB2 /* PBMineController.h */,
-				B0DFE2921FC562D3008D7DB2 /* PBMineController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		B0DFE2941FC562D3008D7DB2 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		E1E5F23DFB7FE3A0F72D745E /* Frameworks */ = {
@@ -159,8 +151,8 @@
 			files = (
 				B0DFE29B1FC562D3008D7DB2 /* PBMine.h in Headers */,
 				B0D8366C1FC5828300BCFC13 /* PBMinePage.h in Headers */,
-				B0DFE29A1FC562D3008D7DB2 /* PBMineController.h in Headers */,
 				B0DFE29D1FC562D3008D7DB2 /* PBMine.pch in Headers */,
+				95A4F66424EBF06100A5A024 /* PBMineController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A4F66324EBF06100A5A024 /* PBMineController.m in Sources */,
 				B0D8366D1FC5828300BCFC13 /* PBMinePage.m in Sources */,
-				B0DFE2991FC562D3008D7DB2 /* PBMineController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
